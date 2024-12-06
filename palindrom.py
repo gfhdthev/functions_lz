@@ -1,6 +1,6 @@
 user_input = str(input('Введите строку: '))
 
-#функция вычисления площади
+#функция узнаем является ли число палиндромом
 def palindrom(b: str) -> bool:
     b.lower()
 
@@ -12,9 +12,9 @@ def palindrom(b: str) -> bool:
 
     for i in range(len(b)//2):
         if b[i] != b[-(i+1)]:
-            return False
+            return False #если два последних числа не совпадают, то выводит False
         
-    return True
+    return True #если жо этого не вывело False, то выведет True
 
 if palindrom(user_input) is True:
     print('Ваша строка палиндром')
