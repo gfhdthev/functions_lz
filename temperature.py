@@ -4,4 +4,4 @@ user_input = int(input('Введите температуру в Цельсия�
 def farin(a: int) -> int:
     return a*9/5+32
 
-print(farin(user_input))
+print('Ваша температура в Фарингейтах', farin(user_input))
